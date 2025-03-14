@@ -1,0 +1,459 @@
+/* Resetting default styles */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #ffa500;
+    font-family: 'Oswald', sans-serif;
+}
+
+.logo {
+    width: 120px;
+    height: auto;
+}
+
+.logo img {
+    max-width: 100px;
+    height: auto;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007bff;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+.navbar .logo img {
+    width: 120px;
+    height: auto;
+}
+
+/* Header Styles */
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1e1e1e;
+    padding: 15px 50px;
+    width: 100%;
+    position: relative;
+}
+
+.site-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+.site-nav ul li a {
+    color: #ffa500;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+    position: relative;
+    font-family: 'Oswald', sans-serif;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.site-nav ul li a:hover {
+    color: #ff8c00;
+    transform: translateY(-3px);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Underline Animation (Optional) */
+.site-nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #ff8c00;
+    transition: transform 0.3s ease-out;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+}
+
+.site-nav ul li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* Container Styles */
+.container {
+    text-align: center;
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(255, 165, 0, 0.5);
+    width: 80%;
+    max-width: 95%;
+    transition: transform 0.3s ease-in-out;
+    margin: auto;
+    flex-grow: 1;
+}
+
+.container:hover {
+    transform: scale(1.02);
+}
+
+/* Buttons */
+.button {
+    display: inline-block;
+    background: #007bff;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: transform 0.2s;
+}
+
+.button:hover {
+    transform: scale(1.05);
+}
+
+/* Hero Section
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 5em;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 1.2em;
+    color: whitesmoke;
+}
+
+.hero button {
+    background: #ff8c00;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    max-width: 10%;
+}*/
+
+/* Calendar Styles */
+#calendar {
+    max-width: 100%;
+    background-color: #2a2a2a;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 6px rgba(255, 165, 0, 0.3);
+    margin-bottom: 20px;
+}
+
+.fc-toolbar {
+    background: #333;
+    color: white;
+    padding: 10px;
+    border-radius: 8px 8px 0 0;
+}
+
+.fc-daygrid-day {
+    background: #1e1e1e;
+    color: white;
+    border: 1px solid #444;
+    padding: 10px;
+}
+
+.booked-slot {
+    background: rgba(255, 0, 0, 0.7) !important;
+    color: white !important;
+    pointer-events: none;
+}
+
+.available-slot {
+    background: rgba(0, 255, 0, 0.6);
+    color: white;
+}
+
+.fc-daygrid-day:hover {
+    background: #444;
+    cursor: pointer;
+}
+
+.dark-mode #calendar {
+    background: #121212;
+    color: white;
+}
+
+/* Booking Form Styles */
+.booking-form {
+    display: none;
+    padding: 20px;
+    background-color: #2a2a2a;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(255, 165, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+    width: 100%;
+    margin: auto;
+}
+
+.booking-form:hover {
+    transform: scale(1.02);
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ffa500;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ffa500;
+    color: #121212;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: #ff8c00;
+    transform: scale(1.1);
+}
+
+/* Booking Grid Styles */
+.booking-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 100%;
+}
+
+.calendar-column {
+    width: 100%;
+}
+
+/* Sign In Button Styles */
+.site-nav ul li:last-child a {
+    background-color: #ffa500;
+    color: #121212;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+}
+
+.booking-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.booking-column {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+}
+
+.site-nav ul li:last-child a:hover {
+    background-color: #ff8c00;
+    transform: scale(1.1);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .site-nav ul {
+        display: none;
+        flex-direction: column;
+        background: #1e1e1e;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        padding: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .site-nav ul.show {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        background: transparent;
+        border: none;
+        font-size: 24px;
+        color: white;
+    }
+
+    .hamburger span {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: #ffa500;
+        margin: 5px 0;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    #calendar {
+        max-width: 90%;
+        margin: 20px auto;
+        padding: 15px;
+        background: #222;
+        border-radius: 8px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .booking-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .booking-column {
+        margin-top: 20px;
+    }
+
+    .site-nav ul li {
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+        padding: 20px;
+    }
+
+    input,
+    select,
+    button {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+/* Add hamburger menu style */
+.hamburger {
+    display: none;
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+.fc {
+    background: #1e1e1e;
+    color: #ffffff;
+}
+
+.fc-toolbar {
+    background: #333;
+    border-bottom: 2px solid #ffa500;
+}
+
+/* Testimonials */
+.testimonials {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px 0;
+    flex-wrap: wrap;
+}
+
+.testimonial-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+}
+
+.testimonial-card img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.testimonial-card p {
+    font-size: 14px;
+    color: #333;
+}
+
+.testimonial-card .author {
+    font-weight: bold;
+    color: #007bff;
+}
+
+.testimonial-card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+
+/* Footer */
+.footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+#notificationModal {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+#notificationModal.success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+#notificationModal.error {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+#notificationModal.info {
+    background-color: #d1ecf1;
+    color: #0c5460;
+}
+.is-invalid {
+    border-color: red;
+}

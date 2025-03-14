@@ -1,0 +1,137 @@
+2025-03-14 17:15:44,062 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-14 17:15:44,062 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-14 17:15:44,064 - INFO -  * Restarting with stat
+2025-03-14 17:15:44,273 - WARNING -  * Debugger is active!
+2025-03-14 17:15:44,276 - INFO -  * Debugger PIN: 878-248-353
+2025-03-14 17:17:52,608 - INFO - 127.0.0.1 - - [14/Mar/2025 17:17:52] "GET / HTTP/1.1" 200 -
+2025-03-14 17:17:52,811 - INFO - 127.0.0.1 - - [14/Mar/2025 17:17:52] "[36mGET /static/fullcalendar/main.min.css HTTP/1.1[0m" 304 -
+2025-03-14 17:17:52,811 - INFO - 127.0.0.1 - - [14/Mar/2025 17:17:52] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2025-03-14 17:17:52,811 - INFO - 127.0.0.1 - - [14/Mar/2025 17:17:52] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-14 17:17:52,822 - INFO - 127.0.0.1 - - [14/Mar/2025 17:17:52] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+2025-03-14 17:17:52,823 - INFO - 127.0.0.1 - - [14/Mar/2025 17:17:52] "[36mGET /static/fullcalendar/locales-all.min.js HTTP/1.1[0m" 304 -
+2025-03-14 17:17:52,823 - INFO - 127.0.0.1 - - [14/Mar/2025 17:17:52] "[36mGET /static/fullcalendar/main.min.js HTTP/1.1[0m" 304 -
+2025-03-14 17:17:52,935 - INFO - IP: 127.0.0.1 | User: Not Logged In | Action: Checked Available Slots | Details: Date: 2025-02-23, Available: ['10:00 AM', '11:00 AM', '12:00 PM', '02:00 PM', '03:00 PM']
+2025-03-14 17:17:52,935 - INFO - 127.0.0.1 - - [14/Mar/2025 17:17:52] "GET /getAvailableSlots?date=2025-02-23 HTTP/1.1" 200 -
+2025-03-14 17:17:52,949 - INFO - 127.0.0.1 - - [14/Mar/2025 17:17:52] "[36mGET /static/images/favicon.ico HTTP/1.1[0m" 304 -
+2025-03-14 17:18:17,641 - INFO - 127.0.0.1 - - [14/Mar/2025 17:18:17] "[36mGET /static/fullcalendar/main.min.css HTTP/1.1[0m" 304 -
+2025-03-14 17:18:17,641 - INFO - 127.0.0.1 - - [14/Mar/2025 17:18:17] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-14 17:18:27,804 - INFO - 127.0.0.1 - - [14/Mar/2025 17:18:27] "GET /admin HTTP/1.1" 200 -
+2025-03-14 17:18:27,815 - INFO - 127.0.0.1 - - [14/Mar/2025 17:18:27] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-14 17:18:42,529 - INFO - 127.0.0.1 - - [14/Mar/2025 17:18:42] "POST /admin HTTP/1.1" 200 -
+2025-03-14 17:18:42,538 - INFO - 127.0.0.1 - - [14/Mar/2025 17:18:42] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-14 17:18:45,320 - INFO - 127.0.0.1 - - [14/Mar/2025 17:18:45] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-14 17:24:56,306 - INFO -  * Detected change in 'C:\\Users\\JNVLABPC1\\Pictures\\Camera\\appointment-booking\\app.py', reloading
+2025-03-14 17:24:56,346 - INFO -  * Restarting with stat
+2025-03-14 17:24:56,563 - WARNING -  * Debugger is active!
+2025-03-14 17:24:56,567 - INFO -  * Debugger PIN: 878-248-353
+2025-03-14 17:25:02,588 - INFO -  * Detected change in 'C:\\Users\\JNVLABPC1\\Pictures\\Camera\\appointment-booking\\app.py', reloading
+2025-03-14 17:25:02,648 - INFO -  * Restarting with stat
+2025-03-14 17:25:02,858 - WARNING -  * Debugger is active!
+2025-03-14 17:25:02,860 - INFO -  * Debugger PIN: 878-248-353
+2025-03-14 17:25:03,870 - INFO -  * Detected change in 'C:\\Users\\JNVLABPC1\\Pictures\\Camera\\appointment-booking\\app.py', reloading
+2025-03-14 17:25:03,894 - INFO -  * Restarting with stat
+2025-03-14 17:25:04,127 - WARNING -  * Debugger is active!
+2025-03-14 17:25:04,133 - INFO -  * Debugger PIN: 878-248-353
+2025-03-14 17:25:06,144 - INFO -  * Detected change in 'C:\\Users\\JNVLABPC1\\Pictures\\Camera\\appointment-booking\\app.py', reloading
+2025-03-14 17:25:06,168 - INFO -  * Restarting with stat
+2025-03-14 17:25:06,377 - WARNING -  * Debugger is active!
+2025-03-14 17:25:06,380 - INFO -  * Debugger PIN: 878-248-353
+2025-03-14 17:25:12,399 - INFO -  * Detected change in 'C:\\Users\\JNVLABPC1\\Pictures\\Camera\\appointment-booking\\app.py', reloading
+2025-03-14 17:25:12,438 - INFO -  * Restarting with stat
+2025-03-14 17:25:12,650 - WARNING -  * Debugger is active!
+2025-03-14 17:25:12,655 - INFO -  * Debugger PIN: 878-248-353
+2025-03-14 17:26:34,820 - INFO -  * Detected change in 'C:\\Users\\JNVLABPC1\\Pictures\\Camera\\appointment-booking\\app.py', reloading
+2025-03-14 17:26:34,864 - INFO -  * Restarting with stat
+2025-03-14 17:26:35,084 - WARNING -  * Debugger is active!
+2025-03-14 17:26:35,089 - INFO -  * Debugger PIN: 878-248-353
+2025-03-14 17:27:14,170 - INFO -  * Detected change in 'C:\\Users\\JNVLABPC1\\Pictures\\Camera\\appointment-booking\\app.py', reloading
+2025-03-14 17:27:14,210 - INFO -  * Restarting with stat
+2025-03-14 17:27:14,432 - WARNING -  * Debugger is active!
+2025-03-14 17:27:14,436 - INFO -  * Debugger PIN: 878-248-353
+2025-03-14 17:27:18,451 - INFO -  * Detected change in 'C:\\Users\\JNVLABPC1\\Pictures\\Camera\\appointment-booking\\app.py', reloading
+2025-03-14 17:27:18,500 - INFO -  * Restarting with stat
+2025-03-14 17:27:18,717 - WARNING -  * Debugger is active!
+2025-03-14 17:27:18,718 - INFO -  * Debugger PIN: 878-248-353
+2025-03-14 17:28:04,816 - INFO -  * Detected change in 'C:\\Users\\JNVLABPC1\\Pictures\\Camera\\appointment-booking\\app.py', reloading
+2025-03-14 17:28:04,866 - INFO -  * Restarting with stat
+2025-03-14 17:28:05,089 - WARNING -  * Debugger is active!
+2025-03-14 17:28:05,091 - INFO -  * Debugger PIN: 878-248-353
+2025-03-14 17:28:40,480 - INFO - 127.0.0.1 - - [14/Mar/2025 17:28:40] "POST /admin HTTP/1.1" 200 -
+2025-03-14 17:28:40,551 - INFO - 127.0.0.1 - - [14/Mar/2025 17:28:40] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-14 17:28:52,576 - INFO - 127.0.0.1 - - [14/Mar/2025 17:28:52] "POST /admin HTTP/1.1" 200 -
+2025-03-14 17:28:52,584 - INFO - 127.0.0.1 - - [14/Mar/2025 17:28:52] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-14 17:35:35,175 - INFO - 127.0.0.1 - - [14/Mar/2025 17:35:35] "POST /admin HTTP/1.1" 200 -
+2025-03-14 17:35:35,186 - INFO - 127.0.0.1 - - [14/Mar/2025 17:35:35] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-14 17:35:36,038 - INFO - 127.0.0.1 - - [14/Mar/2025 17:35:36] "POST /admin HTTP/1.1" 200 -
+2025-03-14 17:35:36,049 - INFO - 127.0.0.1 - - [14/Mar/2025 17:35:36] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-14 17:35:36,231 - INFO - 127.0.0.1 - - [14/Mar/2025 17:35:36] "POST /admin HTTP/1.1" 200 -
+2025-03-14 17:35:36,238 - INFO - 127.0.0.1 - - [14/Mar/2025 17:35:36] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-14 17:35:46,568 - INFO - 127.0.0.1 - - [14/Mar/2025 17:35:46] "POST /admin HTTP/1.1" 200 -
+2025-03-14 17:35:46,584 - INFO - 127.0.0.1 - - [14/Mar/2025 17:35:46] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-14 17:38:07,251 - INFO -  * Detected change in 'C:\\Users\\JNVLABPC1\\Pictures\\Camera\\appointment-booking\\app.py', reloading
+2025-03-14 17:38:07,292 - INFO -  * Restarting with stat
+2025-03-14 17:38:07,705 - WARNING -  * Debugger is active!
+2025-03-14 17:38:07,709 - INFO -  * Debugger PIN: 878-248-353
+2025-03-14 17:38:16,735 - INFO -  * Detected change in 'C:\\Users\\JNVLABPC1\\Pictures\\Camera\\appointment-booking\\app.py', reloading
+2025-03-14 17:38:16,781 - INFO -  * Restarting with stat
+2025-03-14 17:38:17,007 - WARNING -  * Debugger is active!
+2025-03-14 17:38:17,010 - INFO -  * Debugger PIN: 878-248-353
+2025-03-14 17:38:20,026 - INFO -  * Detected change in 'C:\\Users\\JNVLABPC1\\Pictures\\Camera\\appointment-booking\\app.py', reloading
+2025-03-14 17:38:20,055 - INFO -  * Restarting with stat
+2025-03-14 17:38:20,308 - WARNING -  * Debugger is active!
+2025-03-14 17:38:20,312 - INFO -  * Debugger PIN: 878-248-353
+2025-03-14 17:38:46,376 - INFO - The CSRF token is missing.
+2025-03-14 17:38:46,376 - INFO - 127.0.0.1 - - [14/Mar/2025 17:38:46] "[31m[1mPOST /admin HTTP/1.1[0m" 400 -
+2025-03-14 17:38:47,525 - INFO - The CSRF token is missing.
+2025-03-14 17:38:47,525 - INFO - 127.0.0.1 - - [14/Mar/2025 17:38:47] "[31m[1mPOST /admin HTTP/1.1[0m" 400 -
+2025-03-14 17:38:47,679 - INFO - The CSRF token is missing.
+2025-03-14 17:38:47,679 - INFO - 127.0.0.1 - - [14/Mar/2025 17:38:47] "[31m[1mPOST /admin HTTP/1.1[0m" 400 -
+2025-03-14 17:38:47,831 - INFO - The CSRF token is missing.
+2025-03-14 17:38:47,831 - INFO - 127.0.0.1 - - [14/Mar/2025 17:38:47] "[31m[1mPOST /admin HTTP/1.1[0m" 400 -
+2025-03-14 17:39:04,390 - INFO - The CSRF token is missing.
+2025-03-14 17:39:04,390 - INFO - 127.0.0.1 - - [14/Mar/2025 17:39:04] "[31m[1mPOST /admin HTTP/1.1[0m" 400 -
+2025-03-14 17:39:11,942 - INFO - The CSRF token is missing.
+2025-03-14 17:39:11,942 - INFO - 127.0.0.1 - - [14/Mar/2025 17:39:11] "[31m[1mPOST /admin HTTP/1.1[0m" 400 -
+2025-03-14 17:39:15,799 - INFO - The CSRF token is missing.
+2025-03-14 17:39:15,799 - INFO - 127.0.0.1 - - [14/Mar/2025 17:39:15] "[31m[1mPOST /admin HTTP/1.1[0m" 400 -
+2025-03-14 17:40:24,567 - INFO -  * Detected change in 'C:\\Users\\JNVLABPC1\\Pictures\\Camera\\appointment-booking\\app.py', reloading
+2025-03-14 17:40:24,615 - INFO -  * Restarting with stat
+2025-03-14 17:40:24,854 - WARNING -  * Debugger is active!
+2025-03-14 17:40:24,862 - INFO -  * Debugger PIN: 878-248-353
+2025-03-14 17:40:27,557 - INFO - The CSRF token is missing.
+2025-03-14 17:40:27,557 - INFO - 127.0.0.1 - - [14/Mar/2025 17:40:27] "[31m[1mPOST /admin HTTP/1.1[0m" 400 -
+2025-03-14 17:40:29,215 - INFO - The CSRF token is missing.
+2025-03-14 17:40:29,215 - INFO - 127.0.0.1 - - [14/Mar/2025 17:40:29] "[31m[1mPOST /admin HTTP/1.1[0m" 400 -
+2025-03-14 17:40:29,399 - INFO - The CSRF token is missing.
+2025-03-14 17:40:29,399 - INFO - 127.0.0.1 - - [14/Mar/2025 17:40:29] "[31m[1mPOST /admin HTTP/1.1[0m" 400 -
+2025-03-14 17:42:41,408 - INFO - The CSRF token is missing.
+2025-03-14 17:42:41,408 - INFO - 127.0.0.1 - - [14/Mar/2025 17:42:41] "[31m[1mPOST /admin HTTP/1.1[0m" 400 -
+2025-03-14 17:42:47,874 - INFO - The CSRF token is missing.
+2025-03-14 17:42:47,875 - INFO - 127.0.0.1 - - [14/Mar/2025 17:42:47] "[31m[1mPOST /admin HTTP/1.1[0m" 400 -
+2025-03-14 17:44:14,297 - INFO -  * Detected change in 'C:\\Users\\JNVLABPC1\\Pictures\\Camera\\appointment-booking\\app.py', reloading
+2025-03-14 17:44:14,340 - INFO -  * Restarting with stat
+2025-03-14 17:44:14,569 - WARNING -  * Debugger is active!
+2025-03-14 17:44:14,573 - INFO -  * Debugger PIN: 878-248-353
+2025-03-14 17:44:24,153 - INFO - The CSRF token is missing.
+2025-03-14 17:44:24,154 - INFO - 127.0.0.1 - - [14/Mar/2025 17:44:24] "[31m[1mPOST /admin HTTP/1.1[0m" 400 -
+2025-03-14 17:44:24,694 - INFO - The CSRF token is missing.
+2025-03-14 17:44:24,694 - INFO - 127.0.0.1 - - [14/Mar/2025 17:44:24] "[31m[1mPOST /admin HTTP/1.1[0m" 400 -
+2025-03-14 17:44:24,886 - INFO - The CSRF token is missing.
+2025-03-14 17:44:24,886 - INFO - 127.0.0.1 - - [14/Mar/2025 17:44:24] "[31m[1mPOST /admin HTTP/1.1[0m" 400 -
+2025-03-14 17:44:30,849 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-14 17:44:30,849 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-14 17:44:30,849 - INFO -  * Restarting with stat
+2025-03-14 17:44:31,068 - WARNING -  * Debugger is active!
+2025-03-14 17:44:31,071 - INFO -  * Debugger PIN: 878-248-353
+2025-03-14 17:44:45,671 - INFO - The CSRF token is missing.
+2025-03-14 17:44:45,671 - INFO - 127.0.0.1 - - [14/Mar/2025 17:44:45] "[31m[1mPOST /admin HTTP/1.1[0m" 400 -
+2025-03-14 17:46:01,790 - INFO - The CSRF token is missing.
+2025-03-14 17:46:01,790 - INFO - 127.0.0.1 - - [14/Mar/2025 17:46:01] "[31m[1mPOST /admin HTTP/1.1[0m" 400 -
+2025-03-14 17:46:01,973 - INFO - The CSRF token is missing.
+2025-03-14 17:46:01,973 - INFO - 127.0.0.1 - - [14/Mar/2025 17:46:01] "[31m[1mPOST /admin HTTP/1.1[0m" 400 -
+2025-03-14 17:46:02,136 - INFO - The CSRF token is missing.
+2025-03-14 17:46:02,136 - INFO - 127.0.0.1 - - [14/Mar/2025 17:46:02] "[31m[1mPOST /admin HTTP/1.1[0m" 400 -
+2025-03-14 17:46:19,535 - INFO - The CSRF token is missing.
+2025-03-14 17:46:19,535 - INFO - 127.0.0.1 - - [14/Mar/2025 17:46:19] "[31m[1mPOST /admin HTTP/1.1[0m" 400 -

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Book your appointment with us!">
+    <meta name="keywords" content="appointment, booking, calendar">
+    <title>Appointment Booking</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.ico') }}" type="image/x-icon">
+    <link rel="stylesheet" href="{{ url_for('static', filename='fullcalendar/main.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <style>
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            position: relative;
+        }
+
+        .close-button {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .close-button:hover,
+        .close-button:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="logo">
+            <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Company Logo">
+        </div>
+        <nav class="site-nav">
+            <button class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul id="nav-list">
+                <li><a href="#" aria-label="Home">Home</a></li>
+                <li><a href="#calender-body" aria-label="Book Appointment">Book Appointment</a></li>
+                <li><a href="#" aria-label="About Us">About Us</a></li>
+                <li><a href="#" aria-label="Career">Career</a></li>
+                <li><a href="#" aria-label="Privacy Policy">Privacy Policy</a></li>
+                <li><a href="#" aria-label="Sign In">Sign In</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--<section class="hero">
+        <h1>Welcome!</h1>
+        <p>Book your appointment with us!</p>
+        <a href="#calender-body"><button class="main-button">Button</button></a>
+    </section>-->
+    <div class="container" id="calender-body">
+        <h1>Book Your Slot</h1>
+        <div class="booking-grid">
+            <div id="calendar" class="calendar-column"></div>
+            <div id="bookingForm" class="booking-form booking-column" style="display: none;">
+                <h2>Confirm Your Booking</h2>
+                <p id="selectedDate"></p>
+                <input type="text" id="name" placeholder="Your Name" required autocomplete="name">
+                <input type="email" id="email" placeholder="Your Email" required autocomplete="email">
+                <input type="tel" id="phone" placeholder="Your Phone Number" required autocomplete="tel"
+                    pattern="\d{10}">
+                <select id="timeSlot" required>
+                    <option value="">Select Time</option>
+                </select>
+                <button id="confirmBookingButton">Confirm Booking</button>
+                <p>* All times are displayed in your local time zone.</p>
+            </div>
+        </div>
+    </div>
+    <div id="notificationModal" class="modal success error info">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <p id="notificationMessage"></p>
+        </div>
+    </div>
+    <!--<section class="testimonials">
+        <h2>Section heading</h2>
+        <div class="cards">
+            <div class="card">
+                <p>“A terrific piece of praise”</p>
+                <div class="user">
+                    <img src="avatar1.jpg" alt="User 1">
+                    <div>
+                        <strong>Name</strong>
+                        <p>Description</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <p>“A fantastic bit of feedback”</p>
+                <div class="user">
+                    <img src="avatar2.jpg" alt="User 2">
+                    <div>
+                        <strong>Name</strong>
+                        <p>Description</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <p>“A genuinely glowing review”</p>
+                <div class="user">
+                    <img src="avatar3.jpg" alt="User 3">
+                    <div>
+                        <strong>Name</strong>
+                        <p>Description</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">Site Name <span class="bold">demo</span></div>
+            <div class="social-icons">
+                <a href="#">🔗</a>
+                <a href="#">🔗</a>
+                <a href="#">🔗</a>
+            </div>
+            <div class="footer-links">
+                <div class="column">
+                    <h4>Topic</h4>
+                    <a href="#">Page</a>
+                    <a href="#">Page</a>
+                    <a href="#">Page</a>
+                </div>
+                <div class="column">
+                    <h4>Topic</h4>
+                    <a href="#">Page</a>
+                    <a href="#">Page</a>
+                    <a href="#">Page</a>
+                </div>
+                <div class="column">
+                    <h4>Topic</h4>
+                    <a href="#">Page</a>
+                    <a href="#">Page</a>
+                    <a href="#">Page</a>
+                </div>
+            </div>
+        </div>
+    </footer>-->
+    <script src="{{ url_for('static', filename='fullcalendar/main.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='fullcalendar/locales-all.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+</body>
+
+</html>

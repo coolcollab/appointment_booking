@@ -1,0 +1,33 @@
+.fc {
+    direction: ltr;
+    text-align: left;
+  }
+  .fc .fc-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1em;
+  }
+  .fc .fc-button {
+    background: #007bff;
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .fc .fc-button:hover {
+    background: #0056b3;
+  }
+  .fc .fc-view-container {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  .fc .fc-daygrid-day {
+    border: 1px solid #ddd;
+    padding: 5px;
+  }
+  .fc .fc-day-today {
+    background: rgba(0, 123, 255, 0.1);
+  }
+  

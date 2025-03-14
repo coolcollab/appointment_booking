@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Users</title>
+    {% if session['admin_role'] == 'root' %}
+    <div class="main-container">
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #121212;
+                color: #ffffff;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin: 0;
+                padding: 20px;
+            }
+
+            .main-container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 90%;
+                max-width: 1000px;
+                gap: 20px;
+            }
+
+            .container {
+                width: 100%;
+                background: #1e1e1e;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0px 4px 12px rgba(255, 165, 0, 0.5);
+                text-align: center;
+            }
+
+            .add-user-container {
+                width: 100%;
+                max-width: 400px;
+                /* ✅ Keeps form small and centered */
+                background: #1e1e1e;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0px 4px 12px rgba(255, 165, 0, 0.5);
+                text-align: center;
+                display: none;
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+
+
+            .add-user-container:hover {
+                transform: scale(1.05);
+                box-shadow: 0px 6px 15px rgba(255, 165, 0, 0.7);
+            }
+
+
+            h1,
+            h2 {
+                color: #ffa500;
+            }
+
+            table {
+                width: 100%;
+                margin-top: 20px;
+                border-collapse: collapse;
+                background: #2a2a2a;
+                border-radius: 8px;
+                overflow: hidden;
+            }
+
+            th,
+            td {
+                padding: 12px;
+                border-bottom: 1px solid #ffa500;
+            }
+
+            th {
+                background: #ff8c00;
+                color: black;
+            }
+
+            td {
+                color: white;
+            }
+
+            button {
+                padding: 8px 16px;
+                border: none;
+                cursor: pointer;
+                border-radius: 5px;
+                font-size: 14px;
+                transition: background 0.3s ease;
+            }
+
+            .delete-btn {
+                background-color: #ff4c4c;
+                color: white;
+            }
+
+            .delete-btn:hover {
+                background-color: #d32f2f;
+            }
+
+            .add-user-icon {
+                font-size: 24px;
+                cursor: pointer;
+                color: #ffa500;
+                transition: transform 0.3s ease;
+            }
+
+            .add-user-icon:hover {
+                transform: scale(1.2);
+            }
+
+            input {
+                width: 80%;
+                padding: 10px;
+                margin: 10px 0;
+                border: 1px solid #ffa500;
+                border-radius: 5px;
+                font-size: 16px;
+                background-color: #1e1e1e;
+                color: #ffffff;
+                text-align: center;
+            }
+
+            .add-btn {
+                background-color: #ffa500;
+                color: black;
+                margin-top: 10px;
+            }
+
+            .add-btn:hover {
+                background-color: #ff8c00;
+            }
+
+            @media screen and (max-width: 768px) {
+                body {
+                    align-items: flex-start;
+                    height: auto;
+                }
+
+                .main-container {
+                    width: 100%;
+                    padding: 10px;
+                }
+
+                .container,
+                .add-user-container {
+                    width: 100%;
+                }
+            }
+
+            .modal {
+                display: none;
+                /* Hidden by default */
+                position: fixed;
+                /* Stay in place */
+                z-index: 1;
+                /* Sit on top */
+                left: 0;
+                top: 0;
+                width: 100%;
+                /* Full width */
+                height: 100%;
+                /* Full height */
+                overflow: auto;
+                /* Enable scroll if needed */
+                background-color: rgb(0, 0, 0);
+                /* Fallback color */
+                background-color: rgba(0, 0, 0, 0.4);
+                /* Black w/ opacity */
+            }
+
+            .modal-content {
+                background-color: #fefefe;
+                margin: 15% auto;
+                /* 15% from the top and centered */
+                padding: 20px;
+                border: 1px solid #888;
+                width: 80%;
+                /* Could be more or less, depending on screen size */
+                position: relative;
+            }
+
+            .close-button {
+                color: #aaa;
+                float: right;
+                font-size: 28px;
+                font-weight: bold;
+                cursor: pointer;
+            }
+
+            .close-button:hover,
+            .close-button:focus {
+                color: black;
+                text-decoration: none;
+                cursor: pointer;
+            }
+        </style>
+        {% endif %}
+</head>
+
+<body>
+    {% if session['admin_role'] == 'root' %}
+    <div class="main-container">
+        <div class="container">
+            <h1>Manage Users</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Username</th>
+                        <th>Role</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for user in users %}
+                    <tr>
+                        <td>{{ user[0] }}</td>
+                        <td>{{ user[1] }}</td>
+                        <td>{{ user[2] }}</td>
+                        <td>
+                            <button class="delete-btn deleteUserButton" data-user-id="{{ user[0] }}">🗑 Delete</button>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+            <h2><span class="add-user-icon" onclick="toggleAddUserForm()">Add New User ➕</span></h2>
+        </div>
+
+        <div class="add-user-container" id="addUserForm">
+            <h2>Add User</h2>
+            <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+            <input type="text" id="newUsername" placeholder="Username" required>
+            <input type="password" id="newPassword" placeholder="Password" required>
+            <select id="newUserRole" required>
+                <option value="manager">Manager</option>
+                <option value="root">Root</option>
+            </select>
+            <button class="add-btn add-user-btn" onclick="addUser()">Add User</button>
+        </div>
+    </div>
+    <div id="notificationModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <p id="notificationMessage"></p>
+        </div>
+    </div>
+    <script>
+        function toggleAddUserForm() {
+            let form = document.getElementById("addUserForm");
+            if (form.style.display === "none" || form.style.display === "") {
+                form.style.display = "block";
+                form.style.animation = "fadeIn 0.3s ease-in-out";
+            } else {
+                form.style.animation = "fadeOut 0.3s ease-in-out";
+                setTimeout(() => { form.style.display = "none"; }, 300);
+            }
+        }
+
+    </script>
+
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+    {% endif %}
+</body>
+
+</html>
