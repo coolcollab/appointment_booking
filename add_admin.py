@@ -26,8 +26,8 @@ if not db_exists:
 
 c.execute("SELECT COUNT(*) FROM admin")
 if c.fetchone()[0] == 0:
-    root_username = "rootadmin"
-    root_password = "rootadmin001"
+    root_username = "YOUR_USERNAME"
+    root_password = "YOUR_PASSWORD"
     root_role = "root"
     root_hashed_password = hash_password(root_password)
 
