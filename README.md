@@ -1,3 +1,3 @@
 pip install -r requirements.txt
-python app.py
-python add_admin.py
+\n python app.py
+\n python add_admin.py
